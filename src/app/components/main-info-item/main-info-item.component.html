@@ -1,0 +1,45 @@
+<div class="info-box">
+  <div class="info-wrapper">
+    <div class="info-img">
+      <img [src]="infoOne.host.avatat" alt="test">
+    </div>
+    <div class="info-main">
+      <div class="info-main-first">
+        <div class="info-main-first-golovna">
+          <p>{{infoOne.host.nickName}}</p>
+          <span>{{infoOne.question}}</span>
+        </div>
+        <div class="info-main-first-form">
+          <form [formGroup]="myFormGroup" (ngSubmit)="valid()">
+            <label>BTY</label>
+            <input type="text" [min]="0.01" name="count" [formControl]="countControl">
+            <button type="submit" class="info-main-first-form-color" [disabled]="!myFormGroup.valid">BET NOW</button>
+          </form>
+        </div>
+      </div>
+      <div class="info-main-last-wrapper">
+        <div class="info-main-last">
+          <div class="kyb info-main-last-in">
+            <img src="../../../assets/image/Ellipse%2049.jpg" alt="test">
+          </div>
+          <div class="info-main-last-in" style="color: forestgreen">Starlord</div>
+          <div class="info-main-last-in"> {{infoOne.answerAmount}} Joined</div>
+          <div class="info-main-last-in">{{countControl.value}} BTY Avg. Bet</div>
+          <div class="kyb info-main-last-in"></div>
+          <div class="info-main-last-in">Avengers (1200)</div>
+        </div>
+        <div class="info-main-last-box">
+          <div class="info-main-last-box-text" >
+            Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et d.... (see 723 more comments)
+          </div>
+          <div style="margin-right: 10px;padding: 10px;color: yellow;font-size: 20px" >
+            JOIN EVENT
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

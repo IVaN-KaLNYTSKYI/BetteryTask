@@ -1,0 +1,32 @@
+<div class="main-filter">
+  <div class="main-filter-search">
+    <div class="main-filter-search-btn">
+      <form [formGroup]="myFormGroup" (input)="search()">
+        <input  type="text" name="text" placeholder="What are you interested in?" [formControl]="textControl">
+      </form>
+      <button class="btn" style="background: yellow">Friends</button>
+      <button class="btn" style="background: yellow">Social Media</button>
+      <button class="btn" style="background: silver">Moments</button>
+    </div>
+  </div>
+  <div class="main-filter-btn">
+    <div>
+    <button class="btn1" style="background: none" (click)="trending()">Trending</button>
+    <button class="btn1" style="background: none" (click)="controversial()">Controversial</button>
+    <button class="btn1" style="background: none" (click)="following()">Following</button>
+    </div>
+    <div class="main-filter-btn-fil">
+      <span>Filter by subject {{namber}} / {{namber1}}</span>
+    </div>
+  </div>
+</div>
+<div *ngIf="!isLoading" class="loaning">
+  Loading.....
+</div>
+<div *ngIf="isLoading" >
+<app-main-info-item *ngFor="let item of info" [infoOne]="item"></app-main-info-item>
+</div>
+<div *ngIf="isLoading" class="btn-pagination">
+  <button (click)="back(10,10) " [disabled]="namber===0&&namber1===10">back</button>
+  <button (click)="next(10,10)" [disabled]="namber===140&&namber1===150">next</button>
+</div>

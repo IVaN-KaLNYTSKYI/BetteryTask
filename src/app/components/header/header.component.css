@@ -1,0 +1,110 @@
+.header {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/*header-img---------------------------------*/
+
+.header-img img {
+  width: 63px;
+  height: 63px;
+  margin: 9px 0 17px 32px;
+}
+
+.header-logo {
+  position: absolute;
+  height: 30.02px;
+  left: 2.6%;
+  right: 89.24%;
+  top: 38px;
+}
+
+.header-logo-text {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+/*header-avatar  -------------------------------*/
+
+.header-avatar {
+  display: flex;
+  margin-right: 35px;
+  align-items: center;
+}
+
+.header-avatar-bty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header-avatar-bty-img {
+  position: relative;
+}
+
+.header-avatar-bty-img img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-avatar-logo {
+  position: absolute;
+  height: 30px;
+  left: 30%;
+  top: 5px;
+}
+
+.header-avatar-logo-text {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.header-avatar-bty-number,
+.header-avatar-etn-number{
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+.header-avatar-bty-text {
+  color: silver;
+  margin-right: 5px;
+}
+
+.header-avatar-etn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.header-avatar-ton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+.header-avatar-ton-img img{
+  border-radius: 50%;
+  border:2px solid yellow;
+  margin-left:4px ;
+}
+.header-avatar-vec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-avatar-vec-img{
+  position: relative;
+}
+.header-avatar-vec-kyb{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: red;
+}
